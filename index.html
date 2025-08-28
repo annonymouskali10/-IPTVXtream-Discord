@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IPTV Xtream Player</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>📺 IPTV Xtream Player</h1>
+    <form id="loginForm">
+      <input type="text" id="host" placeholder="Host (مثال: http://example.com:8080)" required/>
+      <input type="text" id="username" placeholder="Username" required/>
+      <input type="password" id="password" placeholder="Password" required/>
+      <button type="submit">Fetch Channels</button>
+    </form>
+    <div id="channels"></div>
+    <video id="player" controls autoplay></video>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
